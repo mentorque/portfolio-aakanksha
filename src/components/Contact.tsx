@@ -87,8 +87,17 @@ const Contact = () => {
                 <div className="space-y-4">
                   <h4 className="font-semibold text-foreground">Certifications</h4>
                   <div className="flex flex-wrap gap-2">
-                    {["PL-300 Power BI", "AZ-900 Azure", "Google Data Analytics"].map((cert, index) => (
-                      <Badge key={index} variant="secondary" className="text-xs">{cert}</Badge>
+                    {[
+                      { label: "AZ-900 Azure", url: "https://learn.microsoft.com/en-us/users/aakankshachourasiya-0844/credentials/c88cdd5c7f03fbdc" },
+                      { label: "PL-300 Power BI", url: "https://learn.microsoft.com/en-us/users/aakankshachourasiya-0844/credentials/14d24f8cd6b79dcb" },
+                      { label: "Google Data Analytics", url: "https://www.coursera.org/account/accomplishments/specialization/O9BY8KOH24Y2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" },
+                      { label: "McKinsey Forward", url: "https://www.credly.com/badges/dd7bf607-6f31-40bb-abb7-c2a4d449a758/public_url" },
+                      { label: "Data Analyst in Power BI", url: "https://www.datacamp.com/statement-of-accomplishment/track/8ff87278508ea5a96d5d786231ad83b9d054bf32?raw=1" },
+                      { label: "Statistics Foundations", url: "https://coursera.org/share/f67b73fc0c9647eb212b66e41d16a1c8" }
+                    ].map((cert, index) => (
+                      <a key={index} href={cert.url} target="_blank" rel="noopener noreferrer">
+                        <Badge variant="secondary" className="text-xs hover:bg-primary/20 transition-colors cursor-pointer">{cert.label}</Badge>
+                      </a>
                     ))}
                   </div>
                 </div>

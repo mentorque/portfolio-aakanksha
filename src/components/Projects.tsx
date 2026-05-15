@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Github, Zap, BarChart2, Database, Trophy } from "lucide-react";
+import { Github, Zap, BarChart2, Database, Trophy, TrendingUp, Star } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -57,6 +57,32 @@ const Projects = () => {
       category: "Academic Achievement",
       gradient: "from-orange-500 to-yellow-500",
       githubUrl: "https://github.com/aakankshachourasiya"
+    },
+    {
+      title: "Firm Profit Analysis",
+      description: "Approached as a business problem first — using data from 962 firms across Manufacturing, Services, and ICT to understand where investment delivers the most return and for whom. Equipment investment drives stronger profit outcomes for medium and large firms, while training yields more impact for smaller firms. Investment strategy should be sized and targeted by company profile.",
+      icon: <TrendingUp className="w-8 h-8" />,
+      achievements: [
+        { metric: "962 firms analysed", description: "Analysed firm-level data across Manufacturing, Services, and ICT sectors to identify investment return patterns." },
+        { metric: "Actionable investment insights", description: "Showed equipment investment drives profit for medium/large firms while training has more impact for smaller firms." }
+      ],
+      technologies: ["Statistical Analysis", "Data Analysis", "Business Strategy", "Sector Benchmarking"],
+      category: "Business Analysis",
+      gradient: "from-teal-500 to-cyan-500",
+      githubUrl: "https://github.com/aakankshachourasiya/firm_profit_analysis"
+    },
+    {
+      title: "Amazon Music Reviews — Customer Feedback Analysis",
+      description: "Businesses with large volumes of customer reviews often lack a scalable way to understand what feedback actually matters. Analysed 1.2M+ Amazon reviews to answer a specific business question: what kinds of reviews influence other customers most? Critical, low-rated reviews consistently received the highest helpfulness votes — negative feedback carries outsized influence on purchasing decisions.",
+      icon: <Star className="w-8 h-8" />,
+      achievements: [
+        { metric: "1.2M+ reviews analysed", description: "Processed over 1.2 million Amazon Music reviews to identify patterns in customer helpfulness voting." },
+        { metric: "Negative feedback insight", description: "Critical, low-rated reviews received the highest helpfulness votes — reframing how review monitoring should be prioritised." }
+      ],
+      technologies: ["Apache Spark", "Databricks", "Big Data", "Customer Analytics", "NLP"],
+      category: "Big Data Analytics",
+      gradient: "from-rose-500 to-pink-500",
+      githubUrl: "https://github.com/aakankshachourasiya/amazon_music_reviews_spark_databricks"
     }
   ];
 

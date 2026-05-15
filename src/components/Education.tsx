@@ -19,9 +19,12 @@ const Education = () => {
   ];
 
   const certifications = [
-    { name: "PL-300: Power BI Data Analyst Associate", issuer: "Microsoft" },
-    { name: "AZ-900: Azure Fundamentals", issuer: "Microsoft" },
-    { name: "Google Data Analytics Professional Certificate", issuer: "Google / Coursera" }
+    { name: "AZ-900: Azure Fundamentals Certified", issuer: "Microsoft", url: "https://learn.microsoft.com/en-us/users/aakankshachourasiya-0844/credentials/c88cdd5c7f03fbdc" },
+    { name: "PL-300: Power BI Data Analyst Associate", issuer: "Microsoft", url: "https://learn.microsoft.com/en-us/users/aakankshachourasiya-0844/credentials/14d24f8cd6b79dcb" },
+    { name: "Google Data Analytics Professional Certificate", issuer: "Google / Coursera", url: "https://www.coursera.org/account/accomplishments/specialization/O9BY8KOH24Y2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" },
+    { name: "McKinsey.org Forward Program", issuer: "McKinsey & Company", url: "https://www.credly.com/badges/dd7bf607-6f31-40bb-abb7-c2a4d449a758/public_url" },
+    { name: "Data Analyst in Power BI", issuer: "DataCamp", url: "https://www.datacamp.com/statement-of-accomplishment/track/8ff87278508ea5a96d5d786231ad83b9d054bf32?raw=1" },
+    { name: "Statistics Foundations", issuer: "Coursera", url: "https://coursera.org/share/f67b73fc0c9647eb212b66e41d16a1c8" }
   ];
 
   return (
@@ -72,15 +75,15 @@ const Education = () => {
             <h3 className="text-2xl font-bold text-white mb-6">Certifications & Professional Development</h3>
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 bg-gray-800 rounded-lg border border-gray-600">
+                <a key={index} href={cert.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-gray-800 rounded-lg border border-gray-600 hover:border-blue-500 transition-all duration-300 group">
                   <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0">
                     ✓
                   </div>
                   <div>
-                    <p className="text-white font-semibold">{cert.name}</p>
+                    <p className="text-white font-semibold group-hover:text-blue-400 transition-colors">{cert.name}</p>
                     <p className="text-blue-400 text-sm">{cert.issuer}</p>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
