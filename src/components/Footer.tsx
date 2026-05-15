@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Aakanksha [Last Name]. All rights reserved.
+            © {new Date().getFullYear()} Aakanksha Chourasiya. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm mt-2">
             Built with passion and dedication to excellence.

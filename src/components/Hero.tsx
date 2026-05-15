@@ -1,5 +1,6 @@
 import { ArrowDown } from 'lucide-react';
-import profileImage from '@/assets/profile-avatar.jpg';
+
+const profileImage = '/profile.png';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -40,7 +41,7 @@ const Hero = () => {
               <div className="w-44 h-44 rounded-full border-4 border-white/20 shadow-xl overflow-hidden">
                 <img
                   src={profileImage}
-                  alt="Aakanksha [Last Name]"
+                  alt="Aakanksha Chourasiya"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -52,28 +53,28 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-white">Aakanksha</span>
             <span className="block bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              [Last Name]
+              Chourasiya
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-4 font-light">
-            [Job Title — e.g. Full-Stack Software Engineer]
+            Business Analyst
           </p>
 
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            [Short tagline — e.g. Experienced in building production-grade systems and solving complex problems. Contributed to X using Y and Z technologies.]
+            2+ years of experience across fintech, telecommunications and retail. I turn complex, unreliable data into clear insights that help businesses act with confidence on data they can trust.
           </p>
 
           {/* Contact Info */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-gray-300">
             <div className="flex items-center gap-2">
-              <span>📧 aakanksha@example.com</span>
+              <span>📧 aakankshachourasiya15@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
-              <span>📱 +1 (000) 000-0000</span>
+              <span>📱 +353-899530083</span>
             </div>
             <div className="flex items-center gap-2">
-              <span>📍 [City, Country]</span>
+              <span>📍 Limerick, Ireland</span>
             </div>
           </div>
 

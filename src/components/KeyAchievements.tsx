@@ -1,63 +1,63 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { TrendingUp, DollarSign, Clock, Users, Zap, Target } from "lucide-react";
+import { TrendingUp, Database, BarChart2, ShieldCheck, Target, Users } from "lucide-react";
 
 const KeyAchievements = () => {
   const achievements = [
     {
-      title: "[Achievement Title 1]",
-      description: "[Describe the achievement and its impact.]",
-      icon: <DollarSign className="w-8 h-8" />,
-      company: "[Company 1]",
-      category: "[Category]",
+      title: "80+ Salesforce Cases Resolved Weekly",
+      description: "Analysed and resolved 80+ Salesforce data cases weekly at Three Ireland, ensuring leadership had clean, reliable data to support operational decisions for a public sector client.",
+      icon: <ShieldCheck className="w-8 h-8" />,
+      company: "Three Ireland",
+      category: "Data Quality",
       gradient: "from-green-500 to-emerald-500",
-      metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
+      metrics: ["80+ cases/week", "Public sector client", "CRM data accuracy"]
     },
     {
-      title: "[Achievement Title 2]",
-      description: "[Describe the achievement and its impact.]",
-      icon: <TrendingUp className="w-8 h-8" />,
-      company: "[Company 1]",
-      category: "[Category]",
+      title: "50k+ Records Analysed for Insights",
+      description: "Analysed 50k+ order and payment records at Changepay to identify transaction failure patterns, enabling leadership to resolve fulfilment issues and reduce failed transactions across campus operations.",
+      icon: <Database className="w-8 h-8" />,
+      company: "Changepay",
+      category: "Data Analysis",
       gradient: "from-blue-500 to-cyan-500",
-      metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
+      metrics: ["50k+ records", "Transaction failure reduction", "Campus operations"]
     },
     {
-      title: "[Achievement Title 3]",
-      description: "[Describe the achievement and its impact.]",
-      icon: <Zap className="w-8 h-8" />,
-      company: "[Company 1]",
-      category: "[Category]",
-      gradient: "from-purple-500 to-pink-500",
-      metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
-    },
-    {
-      title: "[Achievement Title 4]",
-      description: "[Describe the achievement and its impact.]",
-      icon: <Clock className="w-8 h-8" />,
-      company: "[Company 2]",
-      category: "[Category]",
-      gradient: "from-orange-500 to-red-500",
-      metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
-    },
-    {
-      title: "[Achievement Title 5]",
-      description: "[Describe the achievement and its impact.]",
+      title: "Zero Critical Errors in Reporting",
+      description: "Validated and cleaned merchant and delivery data at Changepay to ensure accuracy, achieving zero critical errors across all reports presented to senior stakeholders.",
       icon: <Target className="w-8 h-8" />,
-      company: "[Company 2]",
-      category: "[Category]",
-      gradient: "from-indigo-500 to-blue-500",
-      metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
+      company: "Changepay",
+      category: "Data Accuracy",
+      gradient: "from-purple-500 to-pink-500",
+      metrics: ["Zero critical errors", "Senior stakeholder reports", "Data validation"]
     },
     {
-      title: "[Achievement Title 6]",
-      description: "[Describe the achievement and its impact.]",
+      title: "Leadership Dashboards Used Weekly",
+      description: "Designed and maintained interactive Power BI dashboards tracking transaction volumes, peak order times and revenue by campus, used weekly by leadership to guide operational decisions.",
+      icon: <BarChart2 className="w-8 h-8" />,
+      company: "Changepay",
+      category: "Dashboard Design",
+      gradient: "from-orange-500 to-red-500",
+      metrics: ["Weekly leadership use", "Revenue tracking", "Multi-campus visibility"]
+    },
+    {
+      title: "18% Reduction in Stock Discrepancies",
+      description: "Built dashboards at The Indaco Jeans Factory that improved stock visibility and reduced inventory discrepancies by 18% by extracting and analysing production and supplier datasets.",
+      icon: <TrendingUp className="w-8 h-8" />,
+      company: "Indaco Jeans Factory",
+      category: "Process Improvement",
+      gradient: "from-indigo-500 to-blue-500",
+      metrics: ["18% discrepancy reduction", "ERP + HubSpot integration", "Stock visibility"]
+    },
+    {
+      title: "Influenced Pricing & Expansion Decisions",
+      description: "Generated insights on revenue trends and vendor performance at Changepay, directly influencing pricing and expansion decisions across the business.",
       icon: <Users className="w-8 h-8" />,
-      company: "[Company 2]",
-      category: "[Category]",
+      company: "Changepay",
+      category: "Business Impact",
       gradient: "from-teal-500 to-green-500",
-      metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
+      metrics: ["Pricing decisions", "Expansion strategy", "Vendor performance"]
     }
   ];
 
@@ -69,7 +69,7 @@ const KeyAchievements = () => {
             Key <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Achievements</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Measurable impact delivered through innovative technical solutions.
+            Measurable impact delivered through data analysis, reporting and process improvement.
           </p>
         </div>
 
@@ -117,10 +117,10 @@ const KeyAchievements = () => {
           <Card className="card-gradient border-primary/20 shadow-elevated">
             <CardContent className="p-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div><div className="text-3xl font-bold text-primary mb-2">[X]</div><div className="text-sm text-muted-foreground">[Stat Label 1]</div></div>
-                <div><div className="text-3xl font-bold text-accent mb-2">[X%]</div><div className="text-sm text-muted-foreground">[Stat Label 2]</div></div>
-                <div><div className="text-3xl font-bold text-primary mb-2">[X%]</div><div className="text-sm text-muted-foreground">[Stat Label 3]</div></div>
-                <div><div className="text-3xl font-bold text-accent mb-2">[X]</div><div className="text-sm text-muted-foreground">[Stat Label 4]</div></div>
+                <div><div className="text-3xl font-bold text-primary mb-2">2+</div><div className="text-sm text-muted-foreground">Years Experience</div></div>
+                <div><div className="text-3xl font-bold text-accent mb-2">50k+</div><div className="text-sm text-muted-foreground">Records Analysed</div></div>
+                <div><div className="text-3xl font-bold text-primary mb-2">18%</div><div className="text-sm text-muted-foreground">Discrepancy Reduction</div></div>
+                <div><div className="text-3xl font-bold text-accent mb-2">0</div><div className="text-sm text-muted-foreground">Critical Report Errors</div></div>
               </div>
             </CardContent>
           </Card>

@@ -1,28 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Cloud, Database, Zap } from "lucide-react";
+import { BarChart2, MessageSquare, Wrench, Brain } from "lucide-react";
 
 const About = () => {
   const skillCategories = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Languages",
-      skills: ["[Language 1]", "[Language 2]", "[Language 3]", "[Language 4]"]
+      icon: <BarChart2 className="w-6 h-6" />,
+      title: "Business Analysis",
+      skills: ["Requirements Gathering", "Process Improvement", "Stakeholder Management", "Gap Analysis", "Decision Support"]
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Frameworks",
-      skills: ["[Framework 1]", "[Framework 2]", "[Framework 3]", "[Framework 4]"]
+      icon: <BarChart2 className="w-6 h-6" />,
+      title: "Data & Reporting",
+      skills: ["Power BI", "Advanced Excel", "SQL", "KPI Dashboards", "Data Validation", "Operational Reporting"]
     },
     {
-      icon: <Cloud className="w-6 h-6" />,
-      title: "Cloud & DevOps",
-      skills: ["[Cloud 1]", "[Cloud 2]", "[Tool 1]", "[Tool 2]"]
+      icon: <Wrench className="w-6 h-6" />,
+      title: "Tools & Platforms",
+      skills: ["Salesforce", "JIRA", "Microsoft 365", "HubSpot", "Confluence"]
     },
     {
-      icon: <Database className="w-6 h-6" />,
-      title: "Data & Databases",
-      skills: ["[DB 1]", "[DB 2]", "[DB 3]", "[DB 4]"]
+      icon: <Brain className="w-6 h-6" />,
+      title: "AI & Collaboration",
+      skills: ["ChatGPT / Claude", "Prompt Engineering", "GitHub Copilot"]
     }
   ];
 
@@ -34,7 +34,7 @@ const About = () => {
             About <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            [Brief intro — e.g. I'm a passionate developer with expertise in building scalable systems. Currently pursuing X at Y while contributing to Z.]
+            Business Analyst with 2+ years of experience across fintech, telecommunications and retail, backed by an MSc in Business Analytics with First Class Honours and a PL-300 certification.
           </p>
         </div>
 
@@ -45,13 +45,13 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4 text-gradient">Professional Summary</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  [Summary paragraph 1 — e.g. Experienced in building production-grade systems and applying advanced techniques to solve complex problems.]
+                  I turn complex, unreliable data into clear insights that help businesses act with confidence on data they can trust.
                 </p>
                 <p>
-                  Contributed to a <span className="text-primary font-semibold">[Key Achievement 1]</span> by [what you did].
+                  Known for <span className="text-primary font-semibold">picking up new tools quickly</span>, translating complex data findings into simple clear language that non-technical stakeholders can understand and act on, and turning fragmented inconsistent data into a single source of truth across both startup and enterprise environments.
                 </p>
                 <p>
-                  [Summary paragraph 3 — e.g. Reduced X by Y% by developing Z.]
+                  Experienced in resolving data quality issues, building interactive dashboards, and driving process improvements that reduce reporting risk and support operational decisions.
                 </p>
               </div>
             </CardContent>
@@ -89,9 +89,9 @@ const About = () => {
 
         {/* Core Concepts */}
         <div className="mt-12 text-center">
-          <h4 className="text-xl font-semibold mb-4 text-muted-foreground">Core Concepts</h4>
+          <h4 className="text-xl font-semibold mb-4 text-muted-foreground">Communication & Soft Skills</h4>
           <div className="flex flex-wrap justify-center gap-3">
-            {["[Concept 1]", "[Concept 2]", "[Concept 3]", "[Concept 4]", "[Concept 5]"].map((concept, index) => (
+            {["Executive Reporting", "Data Storytelling", "Presentations", "Problem Solving", "Cross-functional Collaboration"].map((concept, index) => (
               <Badge key={index} variant="outline" className="text-sm px-4 py-2">
                 {concept}
               </Badge>

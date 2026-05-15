@@ -2,35 +2,61 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Github, Zap, Brain, Target } from "lucide-react";
+import { Github, Zap, BarChart2, Database, Trophy } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "[Project Title 1]",
-      description: "[Brief description of the project and what problem it solves.]",
-      icon: <Brain className="w-8 h-8" />,
+      title: "Campus Transaction Analytics Dashboard",
+      description: "Built an end-to-end analytics solution at Changepay to track transaction volumes, revenue by campus, and vendor performance. Enabled leadership to identify underperforming campuses and make data-driven pricing and expansion decisions.",
+      icon: <BarChart2 className="w-8 h-8" />,
       achievements: [
-        { metric: "[Key metric 1]", description: "[What was achieved and how.]" },
-        { metric: "[Key metric 2]", description: "[What was achieved and how.]" }
+        { metric: "50k+ records processed", description: "Analysed order and payment records to identify transaction failure patterns and fulfilment issues." },
+        { metric: "Zero critical errors", description: "Validated and cleaned merchant and delivery data, achieving zero critical errors in all senior stakeholder reports." }
       ],
-      technologies: ["[Tech 1]", "[Tech 2]", "[Tech 3]", "[Tech 4]"],
-      category: "[Category]",
-      gradient: "from-purple-500 to-pink-500",
-      githubUrl: "https://github.com/aakanksha"
+      technologies: ["Power BI", "Advanced Excel", "SQL", "Data Validation", "KPI Dashboards"],
+      category: "Data Analytics",
+      gradient: "from-blue-500 to-cyan-500",
+      githubUrl: "https://github.com/aakankshachourasiya"
     },
     {
-      title: "[Project Title 2]",
-      description: "[Brief description of the project and what problem it solves.]",
-      icon: <Target className="w-8 h-8" />,
+      title: "Inventory & Stock Visibility Dashboard",
+      description: "Developed dashboards at The Indaco Jeans Factory to consolidate ERP and HubSpot data, improving stock visibility and reducing inventory discrepancies. Presented findings to the team to support operational decisions.",
+      icon: <Database className="w-8 h-8" />,
       achievements: [
-        { metric: "[Key metric 1]", description: "[What was achieved and how.]" },
-        { metric: "[Key metric 2]", description: "[What was achieved and how.]" }
+        { metric: "18% discrepancy reduction", description: "Built dashboards that improved stock visibility and reduced inventory discrepancies by 18%." },
+        { metric: "Centralised data view", description: "Consolidated ERP and supplier coordination data into structured Excel reports for production planning." }
       ],
-      technologies: ["[Tech 1]", "[Tech 2]", "[Tech 3]", "[Tech 4]"],
-      category: "[Category]",
-      gradient: "from-blue-500 to-cyan-500",
-      githubUrl: "https://github.com/aakanksha"
+      technologies: ["ERP Systems", "HubSpot", "Advanced Excel", "Dashboard Design", "Supplier Data"],
+      category: "Inventory Analytics",
+      gradient: "from-purple-500 to-pink-500",
+      githubUrl: "https://github.com/aakankshachourasiya"
+    },
+    {
+      title: "Salesforce CRM Data Quality Programme",
+      description: "Led ongoing data quality improvement at Three Ireland for a public sector client. Resolved 80+ Salesforce data cases weekly, identified patterns in reporting trackers, and proposed process improvements to strengthen governance standards.",
+      icon: <Zap className="w-8 h-8" />,
+      achievements: [
+        { metric: "80+ cases resolved weekly", description: "Ensured leadership had clean, reliable CRM data to support operational decisions." },
+        { metric: "Improved governance standards", description: "Identified recurring data inconsistency patterns and proposed targeted process improvements." }
+      ],
+      technologies: ["Salesforce", "CRM Analysis", "Reporting Trackers", "Process Improvement", "Stakeholder Management"],
+      category: "CRM & Data Quality",
+      gradient: "from-green-500 to-emerald-500",
+      githubUrl: "https://github.com/aakankshachourasiya"
+    },
+    {
+      title: "Business Simulation — 1st Place",
+      description: "Led a team to 1st place among 18 teams in a business simulation competition during the MSc Business Analytics programme at University of Limerick. Applied analytical and strategic decision-making skills in a competitive environment.",
+      icon: <Trophy className="w-8 h-8" />,
+      achievements: [
+        { metric: "1st place out of 18 teams", description: "Led team strategy and data-driven decision-making throughout the simulation." },
+        { metric: "MSc Business Analytics", description: "Applied coursework skills in a real-world competitive business scenario." }
+      ],
+      technologies: ["Business Strategy", "Data Analysis", "Team Leadership", "Decision Making"],
+      category: "Academic Achievement",
+      gradient: "from-orange-500 to-yellow-500",
+      githubUrl: "https://github.com/aakankshachourasiya"
     }
   ];
 
@@ -42,7 +68,7 @@ const Projects = () => {
             Featured <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            [Brief description of your projects and what they demonstrate.]
+            Data projects and analytical work that demonstrate turning complex data into actionable business insights.
           </p>
         </div>
 
@@ -94,7 +120,7 @@ const Projects = () => {
                           <Button variant="outline" size="sm" asChild className="w-full">
                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                               <Github className="w-4 h-4" />
-                              Source Code
+                              View on GitHub
                             </a>
                           </Button>
                         </div>
@@ -116,11 +142,11 @@ const Projects = () => {
                 Interested in <span className="text-gradient">Collaboration?</span>
               </h3>
               <p className="text-muted-foreground mb-6 text-center">
-                I'm always excited to work on challenging problems. Let's build something amazing together.
+                I'm always excited to work on data challenges. Let's build something impactful together.
               </p>
               <div className="flex justify-center">
                 <Button variant="gradient" size="lg" asChild>
-                  <a href="mailto:aakanksha@example.com">Get In Touch</a>
+                  <a href="mailto:aakankshachourasiya15@gmail.com">Get In Touch</a>
                 </Button>
               </div>
             </CardContent>

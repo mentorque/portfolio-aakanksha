@@ -5,14 +5,14 @@ import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from "lucide-reac
 
 const Contact = () => {
   const contactInfo = [
-    { icon: <Mail className="w-6 h-6" />, label: "Email", value: "aakanksha@example.com", href: "mailto:aakanksha@example.com", primary: true },
-    { icon: <Phone className="w-6 h-6" />, label: "Phone", value: "+1 (000) 000-0000", href: "tel:+10000000000" },
-    { icon: <MapPin className="w-6 h-6" />, label: "Location", value: "[City, Country]", href: "#" }
+    { icon: <Mail className="w-6 h-6" />, label: "Email", value: "aakankshachourasiya15@gmail.com", href: "mailto:aakankshachourasiya15@gmail.com", primary: true },
+    { icon: <Phone className="w-6 h-6" />, label: "Phone", value: "+353-899530083", href: "tel:+353899530083" },
+    { icon: <MapPin className="w-6 h-6" />, label: "Location", value: "Limerick, Ireland", href: "#" }
   ];
 
   const socialLinks = [
-    { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", href: "https://linkedin.com/in/aakanksha", color: "text-blue-500" },
-    { icon: <Github className="w-5 h-5" />, label: "GitHub", href: "https://github.com/aakanksha", color: "text-gray-300" }
+    { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", href: "https://linkedin.com/in/aakanksha-chourasiya", color: "text-blue-500" },
+    { icon: <Github className="w-5 h-5" />, label: "GitHub", href: "https://github.com/aakankshachourasiya", color: "text-gray-300" }
   ];
 
   return (
@@ -23,7 +23,7 @@ const Contact = () => {
             Let's <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            [Brief availability statement — e.g. Currently pursuing X and actively seeking opportunities.]
+            Currently open to new opportunities in Business Analysis and Data Analytics. Let's talk about how I can help your team make better decisions with data.
           </p>
         </div>
 
@@ -74,27 +74,27 @@ const Contact = () => {
                     <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
                     <Badge variant="default" className="text-xs">Available</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground">Currently open to new opportunities and exciting projects</p>
+                  <p className="text-sm text-muted-foreground">Currently open to new opportunities in Business Analysis and Data Analytics</p>
                 </div>
                 <div className="space-y-4">
                   <h4 className="font-semibold text-foreground">Education</h4>
                   <div className="text-sm text-muted-foreground">
-                    <p className="font-medium text-primary">[University Name]</p>
-                    <p>[Degree]</p>
-                    <p>[Period] | GPA: [GPA]</p>
+                    <p className="font-medium text-primary">University of Limerick, Ireland</p>
+                    <p>MSc Business Analytics</p>
+                    <p>2024–2025 | First Class Honours (1:1)</p>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-foreground">Interests</h4>
+                  <h4 className="font-semibold text-foreground">Certifications</h4>
                   <div className="flex flex-wrap gap-2">
-                    {["[Interest 1]", "[Interest 2]", "[Interest 3]", "[Interest 4]"].map((interest, index) => (
-                      <Badge key={index} variant="secondary" className="text-xs">{interest}</Badge>
+                    {["PL-300 Power BI", "AZ-900 Azure", "Google Data Analytics"].map((cert, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs">{cert}</Badge>
                     ))}
                   </div>
                 </div>
                 <div className="pt-4">
                   <Button variant="gradient" className="w-full" asChild>
-                    <a href="mailto:aakanksha@example.com">
+                    <a href="mailto:aakankshachourasiya15@gmail.com">
                       <Mail className="w-4 h-4" />
                       Send Message
                     </a>
