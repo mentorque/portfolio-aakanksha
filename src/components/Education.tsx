@@ -1,20 +1,20 @@
 const Education = () => {
   const education = [
     {
-      degree: "MS in Computer Science",
-      school: "University of North Carolina at Chapel Hill",
-      period: "Aug 2024 – May 2026",
-      gpa: "4.0",
-      coursework: ["Efficient Deep Learning", "Secure and Reliable Systems", "NLP", "Hardware Security"],
-      logo: "UNC"
+      degree: "[Degree — e.g. MS in Computer Science]",
+      school: "[University Name]",
+      period: "[Start Month Year] – [End Month Year]",
+      gpa: "[GPA]",
+      coursework: ["[Course 1]", "[Course 2]", "[Course 3]", "[Course 4]"],
+      logo: "U1"
     },
     {
-      degree: "B.Tech in Computer Science Engineering",
-      school: "Amrita Vishwa Vidyapeetham",
-      period: "Oct 2020 – May 2024",
-      gpa: "8.84/10",
-      coursework: ["First Class with Distinction - highest academic honor"],
-      logo: "AVV"
+      degree: "[Degree — e.g. B.Tech in Computer Science]",
+      school: "[University Name]",
+      period: "[Start Month Year] – [End Month Year]",
+      gpa: "[GPA]",
+      coursework: ["[Achievement or course]"],
+      logo: "U2"
     }
   ];
 
@@ -22,11 +22,9 @@ const Education = () => {
     <section id="education" className="py-20 bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Education
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Education</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            My academic journey in Computer Science and commitment to continuous learning
+            Academic journey and commitment to continuous learning.
           </p>
         </div>
 
@@ -43,23 +41,18 @@ const Education = () => {
                     <p className="text-blue-400 font-semibold text-lg">{edu.school}</p>
                   </div>
                 </div>
-                
                 <div className="text-right">
                   <p className="text-gray-300 font-medium">{edu.period}</p>
                   <p className="text-green-400 font-semibold">GPA: {edu.gpa}</p>
                 </div>
               </div>
-
               <div className="border-t border-gray-700 pt-6">
                 <h4 className="text-lg font-semibold text-gray-300 mb-3">
                   {edu.coursework.length > 1 ? "Relevant Coursework:" : "Achievement:"}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {edu.coursework.map((course, courseIndex) => (
-                    <span 
-                      key={courseIndex}
-                      className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600"
-                    >
+                    <span key={courseIndex} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600">
                       {course}
                     </span>
                   ))}

@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold text-white">
-            Snehashish Reddy Manda
+            Aakanksha [Last Name]
           </div>
 
           {/* Desktop Navigation */}
@@ -41,13 +41,13 @@ const Header = () => {
 
           {/* Contact Info - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="mailto:srmanda.cs@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors">
+            <a href="mailto:aakanksha@example.com" className="text-gray-300 hover:text-blue-400 transition-colors">
               <Mail size={18} />
             </a>
-            <a href="tel:+19196722226" className="text-gray-300 hover:text-blue-400 transition-colors">
+            <a href="tel:+10000000000" className="text-gray-300 hover:text-blue-400 transition-colors">
               <Phone size={18} />
             </a>
-            <a href="https://linkedin.com/in/srmanda-cs" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+            <a href="https://linkedin.com/in/aakanksha" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
               <Linkedin size={18} />
             </a>
           </div>
@@ -83,13 +83,13 @@ const Header = () => {
               
               {/* Mobile Contact Icons */}
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-800">
-                <a href="mailto:srmanda.cs@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="mailto:aakanksha@example.com" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <Mail size={18} />
                 </a>
-                <a href="tel:+19196722226" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="tel:+10000000000" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <Phone size={18} />
                 </a>
-                <a href="https://linkedin.com/in/srmanda-cs" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="https://linkedin.com/in/aakanksha" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <Linkedin size={18} />
                 </a>
               </div>

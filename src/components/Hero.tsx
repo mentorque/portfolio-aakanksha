@@ -40,7 +40,7 @@ const Hero = () => {
               <div className="w-44 h-44 rounded-full border-4 border-white/20 shadow-xl overflow-hidden">
                 <img
                   src={profileImage}
-                  alt="Snehashish Reddy Manda"
+                  alt="Aakanksha [Last Name]"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -50,31 +50,30 @@ const Hero = () => {
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-white">Snehashish</span>
+            <span className="block text-white">Aakanksha</span>
             <span className="block bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Reddy Manda
+              [Last Name]
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-4 font-light">
-            Full-Stack Software Engineer
+            [Job Title — e.g. Full-Stack Software Engineer]
           </p>
 
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Experienced in building production-grade systems on AWS and applying advanced optimization 
-            models to solve complex problems. Contributed to $1M+ systems using React, Python, and cloud technologies.
+            [Short tagline — e.g. Experienced in building production-grade systems and solving complex problems. Contributed to X using Y and Z technologies.]
           </p>
 
           {/* Contact Info */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-gray-300">
             <div className="flex items-center gap-2">
-              <span>📧 srmanda.cs@gmail.com</span>
+              <span>📧 aakanksha@example.com</span>
             </div>
             <div className="flex items-center gap-2">
-              <span>📱 +1 (919) 672-2226</span>
+              <span>📱 +1 (000) 000-0000</span>
             </div>
             <div className="flex items-center gap-2">
-              <span>📍 United States</span>
+              <span>📍 [City, Country]</span>
             </div>
           </div>
 

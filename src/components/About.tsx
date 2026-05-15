@@ -7,22 +7,22 @@ const About = () => {
     {
       icon: <Code className="w-6 h-6" />,
       title: "Languages",
-      skills: ["Python", "Java", "JavaScript", "TypeScript", "SQL", "HTML/CSS"]
+      skills: ["[Language 1]", "[Language 2]", "[Language 3]", "[Language 4]"]
     },
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Frameworks",
-      skills: ["Spring Boot", "React", "Next.js", "FastAPI", "Pytest", "JUnit", "Pandas"]
+      skills: ["[Framework 1]", "[Framework 2]", "[Framework 3]", "[Framework 4]"]
     },
     {
       icon: <Cloud className="w-6 h-6" />,
       title: "Cloud & DevOps",
-      skills: ["AWS", "Azure", "Docker", "CI/CD", "Git", "GCP", "Kubernetes", "Terraform"]
+      skills: ["[Cloud 1]", "[Cloud 2]", "[Tool 1]", "[Tool 2]"]
     },
     {
       icon: <Database className="w-6 h-6" />,
       title: "Data & Databases",
-      skills: ["PostgreSQL", "MongoDB", "OpenSearch", "Kafka", "Redis", "NoSQL"]
+      skills: ["[DB 1]", "[DB 2]", "[DB 3]", "[DB 4]"]
     }
   ];
 
@@ -34,9 +34,7 @@ const About = () => {
             About <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with expertise in building scalable systems 
-            and solving complex optimization problems. Currently pursuing my MS in Computer Science 
-            at UNC Chapel Hill while contributing to production systems.
+            [Brief intro — e.g. I'm a passionate developer with expertise in building scalable systems. Currently pursuing X at Y while contributing to Z.]
           </p>
         </div>
 
@@ -47,17 +45,13 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4 text-gradient">Professional Summary</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Full-stack SDE intern experienced in building production-grade 
-                  document-processing pipelines on AWS and applying advanced optimization 
-                  models to solve NP-hard resource allocation problems.
+                  [Summary paragraph 1 — e.g. Experienced in building production-grade systems and applying advanced techniques to solve complex problems.]
                 </p>
                 <p>
-                  Contributed to a <span className="text-primary font-semibold">$1M+ Performance Management System</span> by 
-                  delivering a key proof-of-concept using React/Next.js and Python/Flask.
+                  Contributed to a <span className="text-primary font-semibold">[Key Achievement 1]</span> by [what you did].
                 </p>
                 <p>
-                  Reduced asset-tracking costs by <span className="text-accent font-semibold">37%</span> by developing a 
-                  device-management portal for 10,000+ employees.
+                  [Summary paragraph 3 — e.g. Reduced X by Y% by developing Z.]
                 </p>
               </div>
             </CardContent>
@@ -97,7 +91,7 @@ const About = () => {
         <div className="mt-12 text-center">
           <h4 className="text-xl font-semibold mb-4 text-muted-foreground">Core Concepts</h4>
           <div className="flex flex-wrap justify-center gap-3">
-            {["System Design", "Distributed Systems", "Microservices", "Algorithms", "Data Structures"].map((concept, index) => (
+            {["[Concept 1]", "[Concept 2]", "[Concept 3]", "[Concept 4]", "[Concept 5]"].map((concept, index) => (
               <Badge key={index} variant="outline" className="text-sm px-4 py-2">
                 {concept}
               </Badge>
